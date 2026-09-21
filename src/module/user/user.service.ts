@@ -3,13 +3,13 @@ import type { Iuser } from "./user.interface";
 import bcrypt from "bcryptjs";
 
 const createUserToDB=async(payLoad:Iuser)=>{
-    const {name,age,password}=payLoad;
+    const {name,age,password,email}=payLoad;
 
     const hashPassword=await bcrypt.hash(password,10)
 
     const result=await pool.query(`
-            INSERT INTO users (name,age,password) VALUES ($1,$2,$3) RETURNING *
-        `,[name,age,hashPassword])
+            INSERT INTO users (name,age,password,email) VALUES ($1,$2,$3,$4) RETURNING *
+        `,[name,age,hashPassword,email])
 
         delete result.rows[0].password
         return result
