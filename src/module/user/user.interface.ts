@@ -1,4 +1,5 @@
 export interface Iuser{
     name:string,
-    age:number
+    age:number,
+    password:string
 }
