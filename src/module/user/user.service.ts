@@ -28,10 +28,18 @@ const deleteUserFromDB=async(id:string)=>{
             DELETE FROM users WHERE id=$1 RETURNING *
         `,[id])
         return result
+};
+
+const getAllUsersFromDB=async()=>{
+    const result=await pool.query(`
+            SELECT * FROM users
+        `)
+        return result
 }
 
 export const userService={
     createUserToDB,
     updateUserIntoDB,
-    deleteUserFromDB
+    deleteUserFromDB,
+    getAllUsersFromDB
 }

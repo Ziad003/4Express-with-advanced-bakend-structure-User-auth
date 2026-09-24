@@ -71,8 +71,25 @@ const deleteUser = async (req: Request, res: Response) => {
   }
 };
 
+const getAllUsers=async(req:Request,res:Response)=>{
+  console.log(req.user)
+  try {
+    const result=await userService.getAllUsersFromDB();
+    res
+      .status(200)
+      .json({ success: true, message: "Users retrive successfully",
+        data:result.rows
+       });
+  } catch (error:any) {
+    res
+      .status(500)
+      .json({ success: false, message: error.message, error: error });
+  }
+}
+
 export const userController = {
   createUser,
   updateUser,
   deleteUser,
+  getAllUsers
 };

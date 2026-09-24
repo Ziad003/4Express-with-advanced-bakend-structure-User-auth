@@ -9,7 +9,7 @@ const loginUser=async(req:Request,res:Response)=>{
       .status(201)
       .json({
         success: true,
-        message: "User info updated successfully",
+        message: "User logged in successfully",
         data: result})
     } catch (error:any) {
          res
