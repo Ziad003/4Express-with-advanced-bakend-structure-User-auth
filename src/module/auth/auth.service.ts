@@ -34,6 +34,7 @@ const loginUserIntoDB = async (payLoad: {
   const jwtpayload = {
     id: user.id,
     name: user.name,
+    role:user.role,
     age: user.age,
     email: user.email,
   };
