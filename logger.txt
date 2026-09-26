@@ -162,3 +162,7 @@ Method -> GET - Time -> 1790411706956 - Url -> /api/users
 Method -> GET - Time -> 1790411706966 - Url -> /favicon.ico
 
 Method -> GET - Time -> 1790411719801 - Url -> /api/users
+
+Method -> POST - Time -> 1790433515872 - Url -> /api/auth/login
+
+Method -> POST - Time -> 1790450029733 - Url -> /api/auth/login
