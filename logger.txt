@@ -248,3 +248,13 @@ Method -> GET - Time -> 1790617811294 - Url -> /api/users
 Method -> GET - Time -> 1790618060826 - Url -> /api/users
 
 Method -> GET - Time -> 1790618061936 - Url -> /api/users
+
+Method -> POST - Time -> 1790623590899 - Url -> /api/auth/login
+
+Method -> GET - Time -> 1790623601163 - Url -> /api/users
+
+Method -> GET - Time -> 1790623608474 - Url -> /api/users
+
+Method -> POST - Time -> 1790623620378 - Url -> /api/users
+
+Method -> POST - Time -> 1790623624561 - Url -> /api/users
