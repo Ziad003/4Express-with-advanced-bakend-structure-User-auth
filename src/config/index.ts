@@ -7,7 +7,10 @@ const config={
     connection_string:process.env.CONNECTIONSTRING as string,
     port:process.env.PORT,
     secret: process.env.JWT_SECRET,
-    refresh_secret: process.env.JWT_REFRESH_SECRET
+    refresh_secret: process.env.JWT_REFRESH_SECRET,
+    accessTokenExt: process.env.ACCESSTOKENEXP,
+    refreshTokenExpt: process.env.REFRESHTOKENEXP
+
 }
 
 export default config;
