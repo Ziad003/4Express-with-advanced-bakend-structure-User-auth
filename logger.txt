@@ -206,3 +206,13 @@ Method -> POST - Time -> 1790588899282 - Url -> /api/profile
 Method -> POST - Time -> 1790588904190 - Url -> /api/auth/login
 
 Method -> POST - Time -> 1790588909313 - Url -> /api/auth/refresh-token
+
+Method -> GET - Time -> 1790617367933 - Url -> /
+
+Method -> GET - Time -> 1790617367969 - Url -> /favicon.ico
+
+Method -> GET - Time -> 1790617369822 - Url -> /
+
+Method -> GET - Time -> 1790617373191 - Url -> /
+
+Method -> GET - Time -> 1790617373628 - Url -> /
